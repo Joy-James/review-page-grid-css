@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    padding: 30px;
+    justify-content: center;
+ 
+} 
+
+.container{
+    border: 2px solid white;
+    display: grid;
+    /* grid-template-columns: 300px 300px 300px 300px; */
+    grid-template-areas:
+    'Daniel Daniel  Jonathan Kira' 
+    'Jean Patrick Patrick Kira'
+    ;
+    gap: 20px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #E7EEF6;
+   
+    
+   
+}
+
+
+.profile{
+    display: flex;
+   
+}
+.profile-img img{
+    border: 1px solid white;
+    border-radius: 2rem;
+    margin: 0; 
+}
+.profile-name{
+    margin-left: 1rem ;
+}
+.profile-name h3{
+    margin: 0;
+    padding: 0.4rem;
+}
+.profile-name h6{
+    margin: 0;
+    padding: 0.4rem;
+}
+
+ .name{
+    
+    border: 1px solid white;
+    border-radius: 10px;
+    /* align-items: center; */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+ }
+
+
+/* .name img{
+    border: 1px solid white;
+    border-radius: 30px;
+    margin: 20px;
+} */
+.name h4{
+    font-size: small;
+    font-family: sans-serif;
+}
+
+#icon{
+    float: right;
+}
+#info{
+    font-size: 13px;
+    /* padding-bottom: 10px; */
+    justify-content: center;
+    width: fit-content;
+    font-family: sans-serif;
+}
+#congrats{
+    font-size: 25px;
+    /* padding-top: 5px; */
+    font-family: sans-serif;
+}
+.Daniel{
+    grid-area: Daniel;
+    background-image: url(/testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position:right;
+    background-position: top;
+    grid-column: 1/3;
+    background-color: #733FC8;
+    color:#F3DCFD;
+}
+
+    
+.Jonathan{
+    grid-area: Jonathan;
+background-color: #49556B;
+color: #F5FAFF;
+align-items: center;
+}
+.Jean{
+    grid-area: Jean;
+background-color: #FFFFFF;
+color: #838997;
+}
+.Patrick{
+    grid-area: Patrick;
+    background-color: #18202D;
+    color: #E7EEF6;
+    grid-column: 2/4;
+}
+.Kira{
+    grid-area: Kira;
+background-color: #FFFFFF;
+color: #7C8187;
+grid-template-rows: 300px;
+
+}
+
+.attribution{
+    padding: 2rem;
+}
+
+
+/* @media screen and (max-width: 600px){
+    .rows{
+        flex-direction: column;
+    }
+    .col-one,
+    .col-two,
+    .col-three{
+        width: 95%;
+    }
+    .col{
+        margin: 1em;
+    }
+} */
+@media  screen and (max-width:600px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+ }
+      .Jonathan,
+     .Daniel,
+     .Jean,
+     .Patrick,
+     .Kira
+    .name { 
+    flex-direction: column;
+        margin: 1em;
+    }  
+
+    
+
+
